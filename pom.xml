@@ -21,7 +21,7 @@
 
     <groupId>com.datastax.cassandra</groupId>
     <artifactId>cassandra-driver-parent</artifactId>
-    <version>3.7.2</version>
+    <version>3.7.3-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>DataStax Java Driver for Apache Cassandra</name>
     <description>
@@ -29,7 +29,7 @@
         (CQL3) and Cassandra's binary protocol.
     </description>
 
-    <url>https://github.com/datastax/java-driver</url>
+    <url>https://github.com/akilegaspi/java-driver</url>
 
     <inceptionYear>2012</inceptionYear>
 
@@ -51,8 +51,8 @@
         <slf4j.version>1.7.25</slf4j.version>
         <slf4j-log4j12.version>1.7.25</slf4j-log4j12.version>
         <guava.version>19.0</guava.version>
-        <netty.version>4.0.56.Final</netty.version>
-        <netty-tcnative.version>2.0.7.Final</netty-tcnative.version>
+        <netty.version>4.1.45.Final</netty.version>
+        <netty-tcnative.version>2.0.28.Final</netty-tcnative.version>
         <metrics.version>3.2.2</metrics.version>
         <snappy.version>1.1.2.6</snappy.version>
         <lz4.version>1.4.1</lz4.version>
@@ -1122,10 +1122,11 @@ limitations under the License.
     </profiles>
 
     <distributionManagement>
-        <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
+      <repository>
+        <id>bintray-akilegaspi-maven</id>
+        <name>akilegaspi-maven</name>
+        <url>https://api.bintray.com/maven/akilegaspi/maven/[PACKAGE_NAME]/;publish=1</url>
+      </repository>
     </distributionManagement>
 
     <licenses>
@@ -1138,9 +1139,9 @@ limitations under the License.
     </licenses>
 
     <scm>
-        <connection>scm:git:git@github.com:datastax/java-driver.git</connection>
-        <developerConnection>scm:git:git@github.com:datastax/java-driver.git</developerConnection>
-        <url>https://github.com/datastax/java-driver</url>
+        <connection>scm:git:git@github.com:akilegaspi/java-driver.git</connection>
+        <developerConnection>scm:git:git@github.com:akilegaspi/java-driver.git</developerConnection>
+        <url>https://github.com/akilegaspi/java-driver</url>
         <tag>3.7.2</tag>
     </scm>
 
